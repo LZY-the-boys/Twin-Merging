@@ -1,0 +1,19 @@
+merge_method: twin_merge
+base_model: roberta-base
+models_to_merge: auto
+models_name: auto
+exclude_param: auto
+model_loader: auto
+dtype: auto
+
+# for dare_mask
+# rescale: true
+# mask_rate: auto
+# mask_strategy: bernoulli
+# weight_format: delta
+# mask_scale: 0.7
+
+# for merge
+second_merge_method: task_arithmetic
+second_merge_config: 
+  scaling: 0.3

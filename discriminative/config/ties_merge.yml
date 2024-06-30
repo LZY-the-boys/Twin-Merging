@@ -1,0 +1,9 @@
+merge_method: ties_merge
+base_model: roberta-base
+models_to_merge: auto
+mask_rate: 0.7
+scaling: 1.0
+models_name: auto
+exclude_param: auto
+model_loader: auto
+dtype: auto

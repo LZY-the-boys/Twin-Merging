@@ -1,0 +1,20 @@
+merge_method: dare_merge
+base_model: roberta-base
+models_to_merge: auto
+models_name: auto
+exclude_param: auto
+model_loader: auto
+dtype: auto
+
+# for dare_mask
+rescale: true
+mask_rate: 0.7
+mask_strategy: bernoulli
+weight_format: delta
+mask_scale: 1.0
+
+# for merge
+second_merge_method: ties_merge
+second_merge_config: 
+  mask_rate: 0.7
+  scaling: 0.9

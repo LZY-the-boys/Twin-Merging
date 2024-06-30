@@ -1,0 +1,9 @@
+merge_method: dare_mask
+base_model: meta-llama/Llama-2-13b-hf
+finetuned_model: WizardLM/WizardMath-13B-V1.0
+dtype: float16
+rescale: true
+mask_rate: 0.7
+mask_strategy: bernoulli
+weight_format: delta
+scaling: 1.0

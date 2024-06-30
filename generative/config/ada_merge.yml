@@ -1,0 +1,9 @@
+merge_method: ada_merge
+base_model: roberta-base
+models_to_merge: auto
+scaling: auto
+models_name: auto
+exclude_param: auto
+model_loader: auto
+dtype: auto
+ada_type: auto

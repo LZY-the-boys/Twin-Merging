@@ -1,0 +1,8 @@
+merge_method: task_arithmetic
+base_model: roberta-base
+models_to_merge: auto
+scaling: 0.7
+models_name: auto
+exclude_param: auto
+model_loader: auto
+dtype: auto
