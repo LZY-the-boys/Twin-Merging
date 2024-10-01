@@ -231,12 +231,12 @@ async def process_request(input_data: ProcessRequest) -> ProcessResponse:
     data_item = router_data[data_type][task_cnt]
 
     if data_item['sentence'] != input_data.prompt:
-        import pdb; pdb.set_trace()
+        raise Exception('offline data order is wrong!')
 
     if len(args.src_twin) > 1:
         tv_weights = F.softmax(torch.tensor(data_item['router_prob']), dim=0)
         if len(tv_weights) != len(args.src_twin):
-            import pdb; pdb.set_trace()
+            raise Exception('the arg is wrong!')
         twin_sum = sum([ w*tv for tv, w in zip(twin_vector.values(),tv_weights) ])
         _infer_lora =  merged_lora  + twin_sum
 

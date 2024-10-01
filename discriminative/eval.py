@@ -269,12 +269,4 @@ def run_eval_glue(
 
 if __name__ == '__main__':
     import defopt
-    try:
-        defopt.run(run_eval_glue)
-    except:
-        import sys,pdb,bdb
-        type, value, tb = sys.exc_info()
-        if type == bdb.BdbQuit:
-            exit()
-        print(type,value)
-        pdb.post_mortem(tb)
+    defopt.run(run_eval_glue)

@@ -120,7 +120,6 @@ def run_merge_lora(
         n = n.replace('lora_A', 'lora_A.merged')
         utils.rsetattr(base_model, n, torch.nn.Parameter(p, requires_grad=False)) 
     
-    import pdb;pdb.set_trace()
     base_model.merge_and_unload(progressbar=True)
     base_model.save_pretrained(args.outdir)
 

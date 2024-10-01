@@ -1,0 +1,12 @@
+{
+    "r": 32,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "task_type": "CAUSAL_LM",
+    "target_modules": [
+        "w2",
+        "c_proj",
+        "c_attn",
+        "w1"
+    ]
+}

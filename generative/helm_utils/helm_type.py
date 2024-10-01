@@ -179,16 +179,8 @@ def dedup(output):
     return output
             
 if __name__ == "__main__":
-    try:
-        text = ""
-        with open("./test", "r") as f:
-            for i in f:
-                text += i
-        print(check_fewshot(text))
-    except:
-        import sys,pdb,bdb
-        type, value, tb = sys.exc_info()
-        if type == bdb.BdbQuit:
-            exit()
-        print(type,value)
-        pdb.post_mortem(tb)
+    text = ""
+    with open("./test", "r") as f:
+        for i in f:
+            text += i
+    print(check_fewshot(text))
