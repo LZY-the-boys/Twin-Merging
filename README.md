@@ -1,5 +1,7 @@
 # Twin-Merging
 
+🚩Our paper Twin-Merging was accepted by NeurIPS2024.
+
 ### [Paper](https://arxiv.org/pdf/2406.15479) 
 
 This repository provides a PyTorch implementation and checkpoint for our Twin-Merging method, introduced in our paper [Twin-Merging](https://arxiv.org/pdf/2406.15479).
