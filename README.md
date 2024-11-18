@@ -61,6 +61,8 @@ source scripts.sh
 run_tie
 ```
 
+For generative tasks, to run our twin-merging, you should use [`generative/eval.sh`](generative/eval.sh). 
+
 ### Eval
 
 The merged model is automatically evaluated using the official Hugging Face [`evaluate`](https://huggingface.co/docs/evaluate/en/index). 
