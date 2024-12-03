@@ -306,8 +306,6 @@ class MergingMethod:
             model - base_model
             for model in models_to_merge
         ]
-        scaling = float(os.environ.get('cola'))
-        # TODO: too easy
         merged_param = base_model + scaling * sum(task_vectors)
         return merged_param
 
